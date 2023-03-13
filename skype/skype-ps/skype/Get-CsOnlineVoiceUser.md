@@ -55,11 +55,11 @@ The following table lists the output fields from `Get-CsOnlineVoiceUser` and the
 | Number | LineUri in the output from `Get-CsOnlineUser`. You can get same phone number format by doing LineUri.Replace('tel:+','')  |
 | Location | Use LocationId in the output from `Get-CsPhoneNumberAssignment -AssignedPstnTargetId <Identity>` as the input to `Get-CsOnlineLisLocation -LocationId` |
 
-In Teams PowerShell Module version 3.0 and later, the following improvements have been introduced for organizations using Teams: 
+In Teams PowerShell Module version 3.0 and later in public cloud environments (and will be applicable to the latest TPM versions in GCC High and DoD environments starting March 15, 2023 with TPM 5.0.1), the following improvements have been introduced for organizations using Teams: 
 - This cmdlet now accurately returns users who are voice-enabled (the older cmdlet in version 2.6.0 and earlier returned users without MCOEV* plans assigned).
 - The result size is not limited to 100 users anymore (the older cmdlet in version 2.6.0 and earlier limited the result size to 100).
 
-In Teams PowerShell Module version 2.6.2 and later, the following attributes are deprecated for organizations with Teams users using the ExpandLocation parameter:
+In Teams PowerShell Module version 2.6.2 and later in public cloud environments (and will be applicable to the latest TPM versions in GCC High and DoD environments starting March 15, 2023 with TPM 5.0.1), the following attributes are deprecated for organizations with Teams users using the ExpandLocation parameter:
 
 - Force
 - NumberOfResultsToSkip
@@ -68,7 +68,7 @@ In Teams PowerShell Module version 2.6.2 and later, the following attributes are
 - ResultSize
 - LicenceState
 
-In Teams PowerShell Module version 2.6.2 and later, the following input parameters are deprecated for organizations with Teams users due to low or zero usage:
+In Teams PowerShell Module version 2.6.2 and later in public cloud environments (and will be applicable to the latest TPM versions in GCC High and DoD environments starting March 15, 2023 with TPM 5.0.1), the following input parameters are deprecated for organizations with Teams users due to low or zero usage (:
 
 - DomainController
 - Force
